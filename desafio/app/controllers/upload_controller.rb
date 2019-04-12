@@ -19,7 +19,7 @@ class UploadController < ApplicationController
       end
 
     else
-      edirect_to action: :index, result: 'Necessário enviar um arquivo!'
+      redirect_to action: :index, result: 'Necessário enviar um arquivo!'
     end
     
   end
