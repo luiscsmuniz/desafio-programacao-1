@@ -1,24 +1,8 @@
-# README
+# Desafio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Desafio referente ao repositório [`desafio-programacao-1`](https://github.com/gettcomex/desafio-programacao-1)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Leitura do arquivo .tab
+- Inserção dos dados na base
+- Utilização do bootstrap para layout
+- Autenticação com o OAuth via Facebook
