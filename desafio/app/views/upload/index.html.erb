@@ -8,9 +8,12 @@
             <% end %>
             <hr>
             <h4>
-                <%=
-                    "Receita total: #{params[:result]}"
-                %>
+                <% if params[:result] %>
+                  Mensagem: <%=params[:result]%>
+                <% end %>
+                <% if params[:sum] %>
+                  Receita: <%=params[:result]%>
+                <% end %>
             </h4>
         </div>
     </div>
