@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :ominiauth_callbacks => "callbacks"}
+  devise_for :users, controllers: {omniauth_callbacks: "callbacks"}
   root to: 'upload#index'
 
   post 'upload/create'
