@@ -1,7 +1,9 @@
-<div class="col-md-6 offset-md-3">
+<div class="col-md-6 offset-md-3" style="margin-top:30px">
     <div class="card">
-        <div class="card-body">
+        <div class="card-title">
             <h1 class="text-center">Desafio</h1>
+        </div>
+        <div class="card-body">
             <%= form_for @upload, :url => { :action => :create } do |f| %>
                 <%= f.file_field :file, class: 'form-control', required: true %>
                 <%= f.submit "Enviar", class: 'btn btn-primary', style: 'margin-top: 10px;' %>
@@ -15,6 +17,10 @@
                   Receita: <%=params[:result]%>
                 <% end %>
             </h4>
+        </div>
+        <div class="card-footer">
+            Logado por <%= current_user.email %>. Não é sua conta?
+            <%= link_to 'Sair', destroy_user_session_path %>
         </div>
     </div>
 </div>
