@@ -1,0 +1,13 @@
+<div class="col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">Desafio</h1>
+            <%= form_for @upload, :url => { :action => :create } do |f| %>
+                <%= f.file_field :file, class: 'form-control', required: false %>
+                <%= f.submit "Enviar", class: 'btn btn-primary', style: 'margin-top: 10px;' %>
+            <% end %>
+
+            <p><%=params[:sum]%></p>
+        </div>
+    </div>
+</div>
