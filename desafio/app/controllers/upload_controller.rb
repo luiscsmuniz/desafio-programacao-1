@@ -13,7 +13,7 @@ class UploadController < ApplicationController
         parsed_file(f)
       end
       if Record.create(@insert)
-        redirect_to action: :index, result: @sum
+        redirect_to action: :index, sum: @sum
       else
         redirect_to action: :index, result: 'Ocorreu algum erro!'
       end
